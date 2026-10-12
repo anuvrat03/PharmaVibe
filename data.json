@@ -1,50 +1,50 @@
 {
-  "last_updated": "Oct 11, 2026 \u2022 04:37 AM UTC",
+  "last_updated": "Oct 12, 2026 \u2022 04:52 AM UTC",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
-      "price": "\u20b91,760.00",
-      "change": "+0.20",
-      "change_pct": "+0.01%",
-      "is_positive": true
+      "price": "\u20b91,757.50",
+      "change": "-2.50",
+      "change_pct": "-0.14%",
+      "is_positive": false
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
-      "price": "\u20b91,197.00",
-      "change": "+17.00",
-      "change_pct": "+1.44%",
+      "price": "\u20b91,214.40",
+      "change": "+17.40",
+      "change_pct": "+1.45%",
       "is_positive": true
     },
     {
       "symbol": "CIPLA.NS",
       "name": "Cipla",
       "market": "IN",
-      "price": "\u20b91,301.00",
-      "change": "-5.80",
-      "change_pct": "-0.44%",
-      "is_positive": false
+      "price": "\u20b91,308.80",
+      "change": "+7.80",
+      "change_pct": "+0.60%",
+      "is_positive": true
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
-      "price": "\u20b99,340.00",
-      "change": "-21.00",
-      "change_pct": "-0.22%",
+      "price": "\u20b99,321.50",
+      "change": "-18.50",
+      "change_pct": "-0.20%",
       "is_positive": false
     },
     {
       "symbol": "LUPIN.NS",
       "name": "Lupin",
       "market": "IN",
-      "price": "\u20b91,956.50",
-      "change": "+19.60",
-      "change_pct": "+1.01%",
-      "is_positive": true
+      "price": "\u20b91,951.80",
+      "change": "-4.70",
+      "change_pct": "-0.24%",
+      "is_positive": false
     },
     {
       "symbol": "LLY",
