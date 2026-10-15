@@ -1,98 +1,116 @@
 {
-  "last_updated": "Oct 14, 2026 \u2022 03:58 AM UTC",
+  "last_updated": "Oct 15, 2026 \u2022 03:39 AM UTC",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
-      "price": "\u20b91,753.60",
-      "change": "-17.10",
-      "change_pct": "-0.97%",
+      "price": "\u20b91,746.40",
+      "change": "-24.30",
+      "change_pct": "-1.37%",
       "is_positive": false
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
-      "price": "\u20b91,222.30",
-      "change": "-17.70",
-      "change_pct": "-1.43%",
+      "price": "\u20b91,216.00",
+      "change": "-24.00",
+      "change_pct": "-1.94%",
       "is_positive": false
     },
     {
       "symbol": "CIPLA.NS",
       "name": "Cipla",
       "market": "IN",
-      "price": "\u20b91,318.80",
-      "change": "-10.80",
-      "change_pct": "-0.81%",
+      "price": "\u20b91,314.60",
+      "change": "-15.00",
+      "change_pct": "-1.13%",
       "is_positive": false
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
-      "price": "\u20b99,208.50",
-      "change": "-76.50",
-      "change_pct": "-0.82%",
+      "price": "\u20b99,023.00",
+      "change": "-262.00",
+      "change_pct": "-2.82%",
       "is_positive": false
     },
     {
       "symbol": "LUPIN.NS",
       "name": "Lupin",
       "market": "IN",
-      "price": "\u20b91,935.70",
-      "change": "-17.90",
-      "change_pct": "-0.92%",
+      "price": "\u20b91,953.20",
+      "change": "-0.40",
+      "change_pct": "-0.02%",
       "is_positive": false
     },
     {
       "symbol": "LLY",
       "name": "Eli Lilly",
       "market": "INT",
-      "price": "$1,166.51",
-      "change": "-16.11",
-      "change_pct": "-1.36%",
-      "is_positive": false
+      "price": "$1,208.74",
+      "change": "+42.23",
+      "change_pct": "+3.62%",
+      "is_positive": true
     },
     {
       "symbol": "NVO",
       "name": "Novo Nordisk",
       "market": "INT",
-      "price": "$38.06",
-      "change": "-0.52",
-      "change_pct": "-1.35%",
-      "is_positive": false
+      "price": "$38.12",
+      "change": "+0.06",
+      "change_pct": "+0.16%",
+      "is_positive": true
     },
     {
       "symbol": "JNJ",
       "name": "Johnson & Johnson",
       "market": "INT",
-      "price": "$248.61",
-      "change": "-15.12",
-      "change_pct": "-5.73%",
-      "is_positive": false
+      "price": "$253.91",
+      "change": "+5.30",
+      "change_pct": "+2.13%",
+      "is_positive": true
     },
     {
       "symbol": "PFE",
       "name": "Pfizer",
       "market": "INT",
-      "price": "$28.37",
-      "change": "-0.03",
-      "change_pct": "-0.11%",
-      "is_positive": false
+      "price": "$29.21",
+      "change": "+0.84",
+      "change_pct": "+2.96%",
+      "is_positive": true
     },
     {
       "symbol": "AZN",
       "name": "AstraZeneca",
       "market": "INT",
-      "price": "$155.82",
-      "change": "-2.51",
-      "change_pct": "-1.59%",
-      "is_positive": false
+      "price": "$162.03",
+      "change": "+6.21",
+      "change_pct": "+3.99%",
+      "is_positive": true
     }
   ],
   "articles": [
+    {
+      "title": "FDA Launches the Rare Disease Framework Initiative to Develop a Holistic, Fit-For-Purpose Framework for Rare Disease Drug Development",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
+      "raw_desc": "The U.S. Food and Drug Administration, a division within the U.S. Department of Health and Human Services (HHS), today announced the Rare Disease Framework Initiative to reimagine",
+      "source": "FDA Regulatory",
+      "date": "Oct 14, 2026",
+      "ai_summary": "The U.S. Food and Drug Administration, a division within the U.S. Department of Health and Human Services (HHS), today announced the Rare Disease Framework Initiative to reimagine",
+      "category": "FDA & APPROVALS"
+    },
+    {
+      "title": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
+      "raw_desc": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
+      "source": "FDA Regulatory",
+      "date": "Oct 14, 2026",
+      "ai_summary": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
+      "category": "FDA & APPROVALS"
+    },
     {
       "title": "FDA Seeks Public Input to Support Ibogaine Research",
       "link": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-support-ibogaine-research",
@@ -145,24 +163,6 @@
       "source": "FDA Regulatory",
       "date": "Sep 28, 2026",
       "ai_summary": "FDA is carefully reviewing its experience implementing the Premarket Tobacco Product Application (PMTA) rule, as well as recent judicial developments, including a federal lawsuit f",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "Federal Court Enters Consent Decree Against Gold Star Distribution, Inc. Following Persistent Insanitary Warehouse Conditions",
-      "link": "http://www.fda.gov/news-events/press-announcements/federal-court-enters-consent-decree-against-gold-star-distribution-inc-following-persistent",
-      "raw_desc": "A U.S. Food and Drug Administration investigation resulted in a federal court order, dated Sept. 21, 2026, stopping\u202fa warehouse operator from distributing FDA-regulated products in",
-      "source": "FDA Regulatory",
-      "date": "Sep 23, 2026",
-      "ai_summary": "A U.S. Food and Drug Administration investigation resulted in a federal court order, dated Sept. 21, 2026, stopping\u202fa warehouse operator from distributing FDA-regulated products in",
-      "category": "INDUSTRY GENERAL"
-    },
-    {
-      "title": "FDA Updates Regulations to Advance Innovative Alternatives to Animal Testing",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-updates-regulations-advance-innovative-alternatives-animal-testing",
-      "raw_desc": "The FDA today issued a direct final rule that updates its regulations to clarify that non-animal methods can be used where appropriate for testing the safety of drugs and biologica",
-      "source": "FDA Regulatory",
-      "date": "Sep 21, 2026",
-      "ai_summary": "The FDA today issued a direct final rule that updates its regulations to clarify that non-animal methods can be used where appropriate for testing the safety of drugs and biologica",
       "category": "FDA & APPROVALS"
     },
     {
