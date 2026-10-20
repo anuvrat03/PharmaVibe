@@ -1,98 +1,107 @@
 {
-  "last_updated": "Oct 19, 2026 \u2022 03:43 AM UTC",
+  "last_updated": "Oct 20, 2026 \u2022 03:54 AM UTC",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
-      "price": "\u20b91,758.80",
-      "change": "-5.20",
-      "change_pct": "-0.29%",
+      "price": "\u20b91,743.00",
+      "change": "-15.80",
+      "change_pct": "-0.90%",
       "is_positive": false
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
-      "price": "\u20b91,232.00",
-      "change": "+13.20",
-      "change_pct": "+1.08%",
+      "price": "\u20b91,242.50",
+      "change": "+9.50",
+      "change_pct": "+0.77%",
       "is_positive": true
     },
     {
       "symbol": "CIPLA.NS",
       "name": "Cipla",
       "market": "IN",
-      "price": "\u20b91,322.00",
-      "change": "-6.00",
-      "change_pct": "-0.45%",
+      "price": "\u20b91,324.10",
+      "change": "-1.00",
+      "change_pct": "-0.08%",
       "is_positive": false
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
-      "price": "\u20b99,191.50",
-      "change": "+161.50",
-      "change_pct": "+1.79%",
-      "is_positive": true
+      "price": "\u20b99,087.00",
+      "change": "-57.50",
+      "change_pct": "-0.63%",
+      "is_positive": false
     },
     {
       "symbol": "LUPIN.NS",
       "name": "Lupin",
       "market": "IN",
-      "price": "\u20b91,955.80",
-      "change": "-25.10",
-      "change_pct": "-1.27%",
+      "price": "\u20b91,939.20",
+      "change": "-22.40",
+      "change_pct": "-1.14%",
       "is_positive": false
     },
     {
       "symbol": "LLY",
       "name": "Eli Lilly",
       "market": "INT",
-      "price": "$1,257.03",
-      "change": "+5.42",
-      "change_pct": "+0.43%",
-      "is_positive": true
+      "price": "$1,240.34",
+      "change": "-16.69",
+      "change_pct": "-1.33%",
+      "is_positive": false
     },
     {
       "symbol": "NVO",
       "name": "Novo Nordisk",
       "market": "INT",
-      "price": "$38.83",
-      "change": "-0.39",
-      "change_pct": "-0.99%",
+      "price": "$38.42",
+      "change": "-0.41",
+      "change_pct": "-1.06%",
       "is_positive": false
     },
     {
       "symbol": "JNJ",
       "name": "Johnson & Johnson",
       "market": "INT",
-      "price": "$255.56",
-      "change": "+2.28",
-      "change_pct": "+0.90%",
-      "is_positive": true
+      "price": "$253.79",
+      "change": "-1.77",
+      "change_pct": "-0.69%",
+      "is_positive": false
     },
     {
       "symbol": "PFE",
       "name": "Pfizer",
       "market": "INT",
-      "price": "$29.58",
-      "change": "+0.14",
-      "change_pct": "+0.48%",
-      "is_positive": true
+      "price": "$29.44",
+      "change": "-0.14",
+      "change_pct": "-0.47%",
+      "is_positive": false
     },
     {
       "symbol": "AZN",
       "name": "AstraZeneca",
       "market": "INT",
-      "price": "$165.41",
-      "change": "-1.27",
-      "change_pct": "-0.76%",
+      "price": "$163.95",
+      "change": "-1.46",
+      "change_pct": "-0.88%",
       "is_positive": false
     }
   ],
   "articles": [
+    {
+      "title": "FDA Approves Immunotherapy That May Allow Certain Patients with Rectal Cancer to Avoid Chemotherapy, Radiation and Surgery",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
+      "raw_desc": "The U.S. Food and Drug Administration today granted accelerated approval for a new use of the immunotherapy Jemperli (dostarlimab-gxly) that may allow some patients with locally ad",
+      "source": "FDA Regulatory",
+      "date": "Oct 19, 2026",
+      "ai_summary": "The U.S. Food and Drug Administration today granted accelerated approval for a new use of the immunotherapy Jemperli (dostarlimab-gxly) that may allow some patients with locally ad",
+      "category": "FDA & APPROVALS"
+    },
     {
       "title": "FDA Launches the Rare Disease Framework Initiative to Develop a Holistic, Fit-For-Purpose Framework for Rare Disease Drug Development",
       "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
@@ -154,15 +163,6 @@
       "source": "FDA Regulatory",
       "date": "Sep 28, 2026",
       "ai_summary": "The U.S. Food and Drug Administration today approved Emcitate (tiratricol) tablets for oral suspension to treat peripheral thyrotoxicosis (excess thyroid hormone levels in the bloo",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA intends to evaluate changes to the PMTA regulatory framework",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
-      "raw_desc": "FDA is carefully reviewing its experience implementing the Premarket Tobacco Product Application (PMTA) rule, as well as recent judicial developments, including a federal lawsuit f",
-      "source": "FDA Regulatory",
-      "date": "Sep 28, 2026",
-      "ai_summary": "FDA is carefully reviewing its experience implementing the Premarket Tobacco Product Application (PMTA) rule, as well as recent judicial developments, including a federal lawsuit f",
       "category": "FDA & APPROVALS"
     },
     {
