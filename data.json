@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 20, 2026 \u2022 03:54 AM UTC",
+  "last_updated": "Oct 21, 2026 \u2022 03:44 AM UTC",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
@@ -50,49 +50,76 @@
       "symbol": "LLY",
       "name": "Eli Lilly",
       "market": "INT",
-      "price": "$1,240.34",
-      "change": "-16.69",
-      "change_pct": "-1.33%",
-      "is_positive": false
+      "price": "$1,283.66",
+      "change": "+43.32",
+      "change_pct": "+3.49%",
+      "is_positive": true
     },
     {
       "symbol": "NVO",
       "name": "Novo Nordisk",
       "market": "INT",
-      "price": "$38.42",
-      "change": "-0.41",
-      "change_pct": "-1.06%",
-      "is_positive": false
+      "price": "$39.35",
+      "change": "+0.93",
+      "change_pct": "+2.42%",
+      "is_positive": true
     },
     {
       "symbol": "JNJ",
       "name": "Johnson & Johnson",
       "market": "INT",
-      "price": "$253.79",
-      "change": "-1.77",
-      "change_pct": "-0.69%",
-      "is_positive": false
+      "price": "$259.36",
+      "change": "+5.57",
+      "change_pct": "+2.19%",
+      "is_positive": true
     },
     {
       "symbol": "PFE",
       "name": "Pfizer",
       "market": "INT",
-      "price": "$29.44",
-      "change": "-0.14",
-      "change_pct": "-0.47%",
-      "is_positive": false
+      "price": "$30.11",
+      "change": "+0.67",
+      "change_pct": "+2.28%",
+      "is_positive": true
     },
     {
       "symbol": "AZN",
       "name": "AstraZeneca",
       "market": "INT",
-      "price": "$163.95",
-      "change": "-1.46",
-      "change_pct": "-0.88%",
-      "is_positive": false
+      "price": "$168.82",
+      "change": "+4.87",
+      "change_pct": "+2.97%",
+      "is_positive": true
     }
   ],
   "articles": [
+    {
+      "title": "FDA Approves First-of-Its-Kind Chronic Hepatitis B Treatment",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
+      "raw_desc": "FDA today approved Hibsago (bepirovirsen) injection, in combination with existing antiviral therapy, to treat chronic hepatitis B virus (HBV) infection in certain adults without ci",
+      "source": "FDA Regulatory",
+      "date": "Oct 20, 2026",
+      "ai_summary": "FDA today approved Hibsago (bepirovirsen) injection, in combination with existing antiviral therapy, to treat chronic hepatitis B virus (HBV) infection in certain adults without ci",
+      "category": "FDA & APPROVALS"
+    },
+    {
+      "title": "FDA Approves Once-Weekly Generic Hormone Therapy Patch for Women",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+      "raw_desc": "Today, the U.S. Food and Drug Administration approved the first generic of Climara Pro (estradiol and levonorgestrel transdermal system, 0.045 mg per day/0.015 mg), a transdermal h",
+      "source": "FDA Regulatory",
+      "date": "Oct 20, 2026",
+      "ai_summary": "Today, the U.S. Food and Drug Administration approved the first generic of Climara Pro (estradiol and levonorgestrel transdermal system, 0.045 mg per day/0.015 mg), a transdermal h",
+      "category": "FDA & APPROVALS"
+    },
+    {
+      "title": "FDA Issues Final Guidance on Prescription Drug Apps and Software",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
+      "raw_desc": "The U.S. Food and Drug Administration today released final guidance establishing a clear framework for how drug companies can develop, distribute, and label apps used alongside the",
+      "source": "FDA Regulatory",
+      "date": "Oct 20, 2026",
+      "ai_summary": "The U.S. Food and Drug Administration today released final guidance establishing a clear framework for how drug companies can develop, distribute, and label apps used alongside the",
+      "category": "FDA & APPROVALS"
+    },
     {
       "title": "FDA Approves Immunotherapy That May Allow Certain Patients with Rectal Cancer to Avoid Chemotherapy, Radiation and Surgery",
       "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
@@ -136,33 +163,6 @@
       "source": "FDA Regulatory",
       "date": "Oct 01, 2026",
       "ai_summary": "The U.S. Food and Drug Administration today approved the Autus Size-Adjustable Valve, a surgically implanted pulmonary heart valve for pediatric patients with congenital pulmonary",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Launches Nationwide Effort to Expand Scientific Expertise and Consumer Voices to Advisory Committees",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-nationwide-effort-expand-scientific-expertise-and-consumer-voices-advisory-committees",
-      "raw_desc": "The U.S. Food and Drug Administration today announced a broad, nationwide recruitment effort to expand the range of qualified voices and perspectives on its advisory committees\u2014 th",
-      "source": "FDA Regulatory",
-      "date": "Sep 30, 2026",
-      "ai_summary": "The U.S. Food and Drug Administration today announced a broad, nationwide recruitment effort to expand the range of qualified voices and perspectives on its advisory committees\u2014 th",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Transnational Counterfeit Drug Distribution Scheme",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-investigation-leads-charges-against-two-indian-nationals-involved-transnational-counterfeit-drug",
-      "raw_desc": "The U.S. Attorney\u2019s Office for the Middle District of Florida and the Criminal Division of the U.S. Department of Justice today announced federal charges against Swapnadip Roy, 33,",
-      "source": "FDA Regulatory",
-      "date": "Sep 29, 2026",
-      "ai_summary": "The U.S. Attorney\u2019s Office for the Middle District of Florida and the Criminal Division of the U.S. Department of Justice today announced federal charges against Swapnadip Roy, 33,",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Approves First Treatment for MCT8 Deficiency",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-mct8-deficiency",
-      "raw_desc": "The U.S. Food and Drug Administration today approved Emcitate (tiratricol) tablets for oral suspension to treat peripheral thyrotoxicosis (excess thyroid hormone levels in the bloo",
-      "source": "FDA Regulatory",
-      "date": "Sep 28, 2026",
-      "ai_summary": "The U.S. Food and Drug Administration today approved Emcitate (tiratricol) tablets for oral suspension to treat peripheral thyrotoxicosis (excess thyroid hormone levels in the bloo",
       "category": "FDA & APPROVALS"
     },
     {
