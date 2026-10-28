@@ -1,40 +1,40 @@
 {
-  "last_updated": "Oct 27, 2026 \u2022 04:07 AM UTC",
+  "last_updated": "Oct 28, 2026 \u2022 04:35 AM UTC",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
-      "price": "\u20b91,761.60",
-      "change": "+21.60",
-      "change_pct": "+1.24%",
-      "is_positive": true
+      "price": "\u20b91,744.00",
+      "change": "-7.20",
+      "change_pct": "-0.41%",
+      "is_positive": false
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
-      "price": "\u20b91,315.90",
-      "change": "+5.00",
-      "change_pct": "+0.38%",
+      "price": "\u20b91,313.00",
+      "change": "+3.00",
+      "change_pct": "+0.23%",
       "is_positive": true
     },
     {
       "symbol": "CIPLA.NS",
       "name": "Cipla",
       "market": "IN",
-      "price": "\u20b91,354.90",
-      "change": "-0.10",
-      "change_pct": "-0.01%",
+      "price": "\u20b91,346.30",
+      "change": "-3.70",
+      "change_pct": "-0.27%",
       "is_positive": false
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
-      "price": "\u20b99,309.00",
-      "change": "+259.00",
-      "change_pct": "+2.86%",
+      "price": "\u20b99,586.00",
+      "change": "+80.50",
+      "change_pct": "+0.85%",
       "is_positive": true
     },
     {
@@ -42,54 +42,54 @@
       "name": "Lupin",
       "market": "IN",
       "price": "\u20b91,957.30",
-      "change": "-2.60",
-      "change_pct": "-0.13%",
-      "is_positive": false
+      "change": "+5.30",
+      "change_pct": "+0.27%",
+      "is_positive": true
     },
     {
       "symbol": "LLY",
       "name": "Eli Lilly",
       "market": "INT",
-      "price": "$1,279.14",
-      "change": "+5.68",
-      "change_pct": "+0.45%",
+      "price": "$1,281.91",
+      "change": "+2.77",
+      "change_pct": "+0.22%",
       "is_positive": true
     },
     {
       "symbol": "NVO",
       "name": "Novo Nordisk",
       "market": "INT",
-      "price": "$39.13",
-      "change": "+0.08",
-      "change_pct": "+0.20%",
-      "is_positive": true
+      "price": "$38.67",
+      "change": "-0.46",
+      "change_pct": "-1.18%",
+      "is_positive": false
     },
     {
       "symbol": "JNJ",
       "name": "Johnson & Johnson",
       "market": "INT",
-      "price": "$266.30",
-      "change": "+2.49",
-      "change_pct": "+0.94%",
+      "price": "$268.73",
+      "change": "+2.43",
+      "change_pct": "+0.91%",
       "is_positive": true
     },
     {
       "symbol": "PFE",
       "name": "Pfizer",
       "market": "INT",
-      "price": "$29.79",
-      "change": "-0.24",
-      "change_pct": "-0.80%",
-      "is_positive": false
+      "price": "$29.80",
+      "change": "+0.01",
+      "change_pct": "+0.03%",
+      "is_positive": true
     },
     {
       "symbol": "AZN",
       "name": "AstraZeneca",
       "market": "INT",
-      "price": "$172.06",
-      "change": "+0.57",
-      "change_pct": "+0.33%",
-      "is_positive": true
+      "price": "$170.08",
+      "change": "-1.98",
+      "change_pct": "-1.15%",
+      "is_positive": false
     }
   ],
   "articles": [
