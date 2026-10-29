@@ -1,189 +1,45 @@
-import os
-import json
-import urllib.request
-import xml.etree.ElementTree as ET
-from datetime import datetime
-from email.utils import parsedate_to_datetime
-
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
-
-RSS_FEEDS = [
-    {"name": "FDA Regulatory", "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"},
-    {"name": "ET Pharma", "url": "https://health.economictimes.indiatimes.com/rss/pharma"},
-    {"name": "FiercePharma", "url": "https://www.fiercepharma.com/rss/xml"},
-    {"name": "Pharma News", "url": "https://pmn.feedify.net/rss"}
-]
-
-# Tickers: 5 Top Indian & 5 Top International Pharma Companies
-STOCKS = [
-    # Indian Pharma (NSE symbols)
-    {"symbol": "SUNPHARMA.NS", "name": "Sun Pharma", "market": "IN", "currency": "₹"},
-    {"symbol": "DRREDDY.NS", "name": "Dr. Reddy's", "market": "IN", "currency": "₹"},
-    {"symbol": "CIPLA.NS", "name": "Cipla", "market": "IN", "currency": "₹"},
-    {"symbol": "DIVISLAB.NS", "name": "Divi's Lab", "market": "IN", "currency": "₹"},
-    {"symbol": "LUPIN.NS", "name": "Lupin", "market": "IN", "currency": "₹"},
-    # Global Pharma
-    {"symbol": "LLY", "name": "Eli Lilly", "market": "INT", "currency": "$"},
-    {"symbol": "NVO", "name": "Novo Nordisk", "market": "INT", "currency": "$"},
-    {"symbol": "JNJ", "name": "Johnson & Johnson", "market": "INT", "currency": "$"},
-    {"symbol": "PFE", "name": "Pfizer", "market": "INT", "currency": "$"},
-    {"symbol": "AZN", "name": "AstraZeneca", "market": "INT", "currency": "$"}
-]
-
 def fetch_stock_prices():
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
     }
     stock_data = []
 
     for stock in STOCKS:
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{stock['symbol']}?interval=1d&range=1d"
+        symbol = stock["symbol"]
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=1d"
         try:
             req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=5) as resp:
+            with urllib.request.urlopen(req, timeout=10) as resp:
                 data = json.loads(resp.read().decode('utf-8'))
                 result = data['chart']['result'][0]
                 meta = result['meta']
                 
-                price = meta.get('regularMarketPrice') or meta.get('chartPreviousClose', 0.0)
-                prev_close = meta.get('chartPreviousClose', price)
+                current_price = meta.get('regularMarketPrice')
+                previous_close = meta.get('chartPreviousClose') or meta.get('previousClose')
                 
-                change = price - prev_close
-                change_pct = (change / prev_close) * 100 if prev_close else 0.0
+                # Calculate percentage change
+                change_percent = 0.0
+                if current_price and previous_close:
+                    change_percent = ((current_price - previous_close) / previous_close) * 100
 
                 stock_data.append({
-                    "symbol": stock['symbol'],
-                    "name": stock['name'],
-                    "market": stock['market'],
-                    "price": f"{stock['currency']}{price:,.2f}",
-                    "change": f"{'+' if change >= 0 else ''}{change:.2f}",
-                    "change_pct": f"{'+' if change >= 0 else ''}{change_pct:.2f}%",
-                    "is_positive": change >= 0
+                    "symbol": stock["symbol"],
+                    "name": stock["name"],
+                    "market": stock["market"],
+                    "currency": stock.get("currency", "INR" if stock["market"] == "IN" else "USD"),
+                    "price": round(current_price, 2) if current_price else 0.0,
+                    "change": round(change_percent, 2)
                 })
         except Exception as e:
-            print(f"Error fetching stock {stock['name']}: {e}")
+            print(f"Error fetching {symbol}: {e}")
+            # Fallback structure so the UI doesn't break if a request fails
             stock_data.append({
-                "symbol": stock['symbol'],
-                "name": stock['name'],
-                "market": stock['market'],
-                "price": "N/A",
-                "change": "0.00",
-                "change_pct": "0.00%",
-                "is_positive": True
+                "symbol": stock["symbol"],
+                "name": stock["name"],
+                "market": stock["market"],
+                "currency": stock.get("currency", "INR" if stock["market"] == "IN" else "USD"),
+                "price": 0.0,
+                "change": 0.0
             })
-
+            
     return stock_data
-
-def format_rss_date(date_str):
-    if not date_str:
-        return datetime.now().strftime("%b %d, %Y")
-    try:
-        dt = parsedate_to_datetime(date_str)
-        return dt.strftime("%b %d, %Y")
-    except Exception:
-        return datetime.now().strftime("%b %d, %Y")
-
-def fetch_rss_items():
-    items = []
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-    }
-    
-    for source in RSS_FEEDS:
-        try:
-            req = urllib.request.Request(source['url'], headers=headers)
-            with urllib.request.urlopen(req, timeout=12) as response:
-                xml_data = response.read()
-                tree = ET.fromstring(xml_data)
-                
-                channel = tree.find('channel')
-                raw_items = channel.findall('item') if channel is not None else tree.findall('{http://www.w3.org/2005/Atom}entry')
-                
-                count = 0
-                for item in raw_items:
-                    if count >= 8:
-                        break
-                        
-                    title = item.findtext('title') or item.findtext('{http://www.w3.org/2005/Atom}title') or ''
-                    link = item.findtext('link') or ''
-                    if not link:
-                        link_elem = item.find('{http://www.w3.org/2005/Atom}link')
-                        if link_elem is not None:
-                            link = link_elem.attrib.get('href', '')
-                            
-                    desc = item.findtext('description') or item.findtext('summary') or ''
-                    pub_date = item.findtext('pubDate') or item.findtext('{http://www.w3.org/2005/Atom}updated') or ''
-
-                    title = title.strip()
-                    link = link.strip()
-                    
-                    if title and link:
-                        items.append({
-                            'title': title,
-                            'link': link,
-                            'raw_desc': desc[:180].replace('<p>', '').replace('</p>', '').strip(),
-                            'source': source['name'],
-                            'date': format_rss_date(pub_date)
-                        })
-                        count += 1
-        except Exception as e:
-            print(f"Error fetching {source['name']}: {e}")
-            
-    return items
-
-def process_with_ai(articles):
-    processed = []
-    for art in articles:
-        t_lower = art['title'].lower()
-        if any(w in t_lower for w in ['fda', 'approval', 'approve', 'clearance']):
-            cat = "FDA & APPROVALS"
-        elif any(w in t_lower for w in ['buy', 'deal', 'acquire', 'acquisition', 'billion', 'million', 'stake', 'investment', 'debt']):
-            cat = "M&A & FINANCIALS"
-        elif any(w in t_lower for w in ['cancer', 'drug', 'trial', 'study', 'vaccine', 'chemo', 'clinical', 'therapy']):
-            cat = "CLINICAL & DRUGS"
-        else:
-            cat = "INDUSTRY GENERAL"
-
-        if OPENROUTER_API_KEY:
-            prompt = f"Summarize this pharma news title in 1 concise executive bullet point sentence: '{art['title']}'"
-            payload = {
-                "model": "google/gemini-2.5-flash",
-                "messages": [{"role": "user", "content": prompt}]
-            }
-            try:
-                req = urllib.request.Request(
-                    "https://openrouter.ai/api/v1/chat/completions",
-                    data=json.dumps(payload).encode('utf-8'),
-                    headers={
-                        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-                        "Content-Type": "application/json"
-                    }
-                )
-                with urllib.request.urlopen(req, timeout=6) as resp:
-                    res = json.loads(resp.read().decode('utf-8'))
-                    art['ai_summary'] = res['choices'][0]['message']['content'].strip()
-            except Exception as e:
-                art['ai_summary'] = art['raw_desc'] or art['title']
-        else:
-            art['ai_summary'] = art['raw_desc'] or art['title']
-            
-        art['category'] = cat
-        processed.append(art)
-        
-    return processed
-
-if __name__ == "__main__":
-    articles = fetch_rss_items()
-    final_articles = process_with_ai(articles)
-    stocks = fetch_stock_prices()
-    
-    output_payload = {
-        "last_updated": datetime.now().strftime("%b %d, %Y • %I:%M %p UTC"),
-        "stocks": stocks,
-        "articles": final_articles
-    }
-    
-    with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(output_payload, f, indent=2)
-    print(f"Saved {len(final_articles)} articles and {len(stocks)} stocks to data.json")
