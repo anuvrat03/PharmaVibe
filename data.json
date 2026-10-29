@@ -1,26 +1,26 @@
 {
-  "updated": "Oct 29, 2026 - 08:05",
-  "last_updated": "Oct 29, 2026 - 08:05",
+  "updated": "Oct 29, 2026 - 08:08",
+  "last_updated": "Oct 29, 2026 - 08:08",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
       "currency": "INR",
-      "price": 1757.4,
-      "change": -0.01,
-      "change_percent": -0.01,
-      "changePercent": -0.01
+      "price": 1758.1,
+      "change": 0.03,
+      "change_percent": 0.03,
+      "changePercent": 0.03
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
       "currency": "INR",
-      "price": 1340.0,
-      "change": 0.34,
-      "change_percent": 0.34,
-      "changePercent": 0.34
+      "price": 1341.4,
+      "change": 0.45,
+      "change_percent": 0.45,
+      "changePercent": 0.45
     },
     {
       "symbol": "CIPLA.NS",
@@ -37,20 +37,20 @@
       "name": "Divi's Lab",
       "market": "IN",
       "currency": "INR",
-      "price": 9568.5,
-      "change": 0.66,
-      "change_percent": 0.66,
-      "changePercent": 0.66
+      "price": 9569.5,
+      "change": 0.67,
+      "change_percent": 0.67,
+      "changePercent": 0.67
     },
     {
       "symbol": "LUPIN.NS",
       "name": "Lupin",
       "market": "IN",
       "currency": "INR",
-      "price": 1989.0,
-      "change": 0.83,
-      "change_percent": 0.83,
-      "changePercent": 0.83
+      "price": 1989.4,
+      "change": 0.85,
+      "change_percent": 0.85,
+      "changePercent": 0.85
     },
     {
       "symbol": "LLY",
