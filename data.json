@@ -1,37 +1,37 @@
 {
-  "updated": "Oct 29, 2026 - 07:22",
+  "updated": "Oct 29, 2026 - 07:25",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
       "currency": "INR",
-      "price": 1760.0,
-      "change": 0.14
+      "price": 1761.6,
+      "change": 0.23
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
       "currency": "INR",
-      "price": 1345.0,
-      "change": 0.72
+      "price": 1344.7,
+      "change": 0.7
     },
     {
       "symbol": "CIPLA.NS",
       "name": "Cipla",
       "market": "IN",
       "currency": "INR",
-      "price": 1355.1,
-      "change": -0.77
+      "price": 1355.7,
+      "change": -0.72
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
       "currency": "INR",
-      "price": 9580.5,
-      "change": 0.79
+      "price": 9584.5,
+      "change": 0.83
     },
     {
       "symbol": "LUPIN.NS",
@@ -82,5 +82,146 @@
       "change": -0.34
     }
   ],
-  "feeds": []
+  "feeds": [
+    {
+      "category": "ET Pharma",
+      "title": "&#039;Ebola is like Covid pandemic&#039;: African CDC chief says no country in the world is safe now",
+      "link": "https://health.economictimes.indiatimes.com/news/industry/ebola-is-like-covid-pandemic-african-cdc-chief-says-no-country-in-the-world-is-safe-now/135292585",
+      "date": "2026-10-29",
+      "summary": "Comparing with Covid, Kaseya said many countries thought they are safe when Covid started. \u201cWe shouldn\u2019t forget that at the beginning of Covid, many countries said there was zero risk of being affected, but a few months later, they became the hotspot,\u201d he said. \u201cWe don\u2019t want to see the UK and other countries become the hotspot.\u201d"
+    },
+    {
+      "category": "ET Pharma",
+      "title": "Youth should lead nationwide campaign against tobacco use: Union Minister Prataprao Jadhav",
+      "link": "https://health.economictimes.indiatimes.com/news/policy/youth-should-lead-nationwide-campaign-against-tobacco-use-union-minister-prataprao-jadhav/135292667",
+      "date": "2026-10-29",
+      "summary": "The 60-day Tobacco-Free Youth campaign was launched at the Atal Bihari Vajpayee Institute of Medical Sciences and Dr RML Hospital here, a health ministry statement said."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "Fortis acquires 110-bed Suguna Hospital in Bengaluru",
+      "link": "https://health.economictimes.indiatimes.com/news/hospitals/fortis-acquires-110-bed-suguna-hospital-in-bengaluru/135286526",
+      "date": "2026-10-29",
+      "summary": "The acquisition was undertaken by Fortis\u2019 wholly-owned subsidiary International Hospital Limited (IHL) with the transaction being completed on October 28."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "HUL backs FSSAI labelling norms for food products high in fat, salt",
+      "link": "https://health.economictimes.indiatimes.com/news/industry/hul-backs-fssai-labelling-norms-for-food-products-high-in-fat-salt-and-sugar/135286222",
+      "date": "2026-10-29",
+      "summary": "The Food Safety and Standards Authority of India (FSSAI) has proposed front-of-pack nutrition labelling for packaged food products high in sugar, salt or fat, seeking to enable consumers to make informed dietary choices."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "Advertising Standards Council flags misleading claims in nutraceutical ads",
+      "link": "https://health.economictimes.indiatimes.com/news/industry/advertising-standards-council-flags-misleading-claims-in-nutraceutical-ads/135262318",
+      "date": "2026-10-28",
+      "summary": "In its report, \u2018A Pill for Thought: Review of Health and Wellness Claims in Nutraceutical Advertising\u2019 based on the suo-motu investigation of nutraceutical ads between July and September 2026, the council said ads may lead consumers to be misled about the benefits of nutraceutical products, particularly those that highlight time-bound results and representations."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "New national air pollution standards wait as review drags on for 5 yrs",
+      "link": "https://health.economictimes.indiatimes.com/news/policy/new-national-air-pollution-standards-wait-as-review-drags-on-for-5-yrs/135263693",
+      "date": "2026-10-28",
+      "summary": "The reply, dated Oct 26, said National Ambient Air Quality Standards (NAAQS) notified in 2009 continue to apply across the country while a revised report from IIT Kanpur remains under review by a steering committee which was constituted by CPCB on May 6, 2020."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "Indira IVF in talks to acquire Sabine in nearly Rs 1,300 crore deal",
+      "link": "https://health.economictimes.indiatimes.com/news/hospitals/indira-ivf-in-talks-to-acquire-sabine-in-nearly-rs-1300-crore-deal/135255986",
+      "date": "2026-10-28",
+      "summary": "The proposed transaction is likely to value CX Partners-owned Sabine at \u20b91,200-1,300 crore, said the people. CX Partners had acquired about 54% stake in Sabine in 2024 at a valuation of $100 million (about \u20b9835 crore)."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "Centrally sponsored insurance must be periodically revised: Fortis MD",
+      "link": "https://health.economictimes.indiatimes.com/news/hospitals/centrally-sponsored-insurance-must-be-periodically-revised-fortis-md/135249479",
+      "date": "2026-10-28",
+      "summary": "This comes a year after the Union health ministry revised rates for nearly 2,000 procedures under the Central Government Health Scheme in October 2025, the first major revamp since 2014."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "SC questions Centre over medicine price markups, says hospitals cannot survive through &#039;dacoity&#039;",
+      "link": "https://health.economictimes.indiatimes.com/news/policy/sc-questions-centre-over-medicine-price-markups-says-hospitals-cannot-survive-through-dacoity/135234978",
+      "date": "2026-10-27",
+      "summary": "The Supreme Court on Tuesday questioned the Centre over the massive disparity between the maximum retail price (MRP) of medicines and their price to retailers, asking why the system appeared to favour pharmaceutical manufacturers over patients."
+    },
+    {
+      "category": "ET Pharma",
+      "title": "Ayushman Bharat Data going to be gamechanger for India and Global South: Dr M Srinivas",
+      "link": "https://health.economictimes.indiatimes.com/news/industry/ayushman-bharat-data-going-to-be-gamechanger-for-india-and-global-south-dr-m-srinivas/135229246",
+      "date": "2026-10-27",
+      "summary": "Speaking at the 20th edition of FICCI Heal 2026, Srinivas  said,&quot;Through the Ayushman Bharat Digital Mission, India has created a robust digital health ecosystem. Once this data is harnessed, AI can be optimally utilised, allowing us to achieve transformative outcomes not only for the nation but also for the Global South.&quot;"
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/pharma/biogens-claims-return-growth-q3-earnings-boost",
+      "date": "2026-10-29",
+      "summary": "Biogen CEO Chris Viehbacher said, \"We're dramatically changing Biogen\" on third quarter earnings call where the biotech announced revenue increase 11% year-over-yera."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/pharma/after-gsks-q3-approval-spate-hibsago-preps-concentrated-us-hep-b-launch",
+      "date": "2026-10-29",
+      "summary": "Armed with a trio of recent high-profile approvals, GSK is banking on its specialty medicines to drive its next wave of growth, even as investor enthusiasm cooled Wednesday morning amid reports of restructuring charges and a vaccine sales dip at the British drugmaker."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/pharma/lilly-combines-global-markets-under-new-leadership-role-36-year-veteran-retires",
+      "date": "2026-10-29",
+      "summary": "Eli Lilly is consolidating its U.S. and international commercial divisions into a unified department, tapping current U.S. head Ilya Yuffa in a newly created role as president of Lilly Global Markets."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/marketing/gsk-vows-not-park-crap-page-41-transparency-push",
+      "date": "2026-10-29",
+      "summary": "GSK CEO Luke Miels has committed to a transparent communication strategy, telling analysts that \u201cwe are not going to park crap on Page 41 of a press release and hope none of you notice it.\u201d<br>"
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/marketing/blue-matter-turbocharges-global-reach-comms-agency-cognite-acquistion",
+      "date": "2026-10-29",
+      "summary": "The deal stands to \"turbocharge\" Cognite's global reach and growth opportunities, chief business officer Sean Cush pointed out."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/marketing/amgen-hit-fda-warning-letter-misleading-vectibix-promotion",
+      "date": "2026-10-29",
+      "summary": "Amgen has been handed an FDA warning letter over a video promoting its cancer drug Vectibix, but the company said that the issues stemmed from an \u201cinadvertent\u201d submission and was not made available publicly."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/marketing/supernus-shreds-adhd-stigma-olympic-snowboarder-chloe-kim",
+      "date": "2026-10-29",
+      "summary": "The Olympic athlete and Qelbree user is the new face of Supernus' \"Ms. Represented\" campaign as it looks to reach a younger audience with its ADHD awareness messaging."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/marketing/eversana-combines-forces-uk-based-ai-health-economics-research-firm-estima-acquistion",
+      "date": "2026-10-29",
+      "summary": "Estima's AI and automation capabilities for health economics and outcomes research will help Eversana further leverage the \"technology-first solutions\" infused into its platform."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/biotech/gsk-predicts-some-limited-impact-uk-roles-restructuring-rolls",
+      "date": "2026-10-29",
+      "summary": "GSK\u2019s global restructuring plan is likely to see \u201csome limited impact\u201d to roles on the Big Pharma\u2019s home turf of the U.K., executives have confirmed."
+    },
+    {
+      "category": "FiercePharma",
+      "title": "No Title",
+      "link": "https://www.fiercepharma.com/marketing/eli-lilly-surges-diabetes-reputation-rankings-close-novo",
+      "date": "2026-10-29",
+      "summary": "Eli Lilly has jumped up a ranking of the corporate reputations of diabetes drugmakers, putting it hot on the heels of Novo."
+    }
+  ]
 }
