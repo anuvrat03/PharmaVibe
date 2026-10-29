@@ -1,241 +1,86 @@
 {
-  "last_updated": "Oct 29, 2026 \u2022 04:50 AM UTC",
+  "updated": "Oct 29, 2026 - 07:22",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
-      "price": "\u20b91,761.20",
-      "change": "+3.70",
-      "change_pct": "+0.21%",
-      "is_positive": true
+      "currency": "INR",
+      "price": 1760.0,
+      "change": 0.14
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
-      "price": "\u20b91,342.20",
-      "change": "+6.80",
-      "change_pct": "+0.51%",
-      "is_positive": true
+      "currency": "INR",
+      "price": 1345.0,
+      "change": 0.72
     },
     {
       "symbol": "CIPLA.NS",
       "name": "Cipla",
       "market": "IN",
-      "price": "\u20b91,361.50",
-      "change": "-4.10",
-      "change_pct": "-0.30%",
-      "is_positive": false
+      "currency": "INR",
+      "price": 1355.1,
+      "change": -0.77
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
-      "price": "\u20b99,594.50",
-      "change": "+36.00",
-      "change_pct": "+0.38%",
-      "is_positive": true
+      "currency": "INR",
+      "price": 9580.5,
+      "change": 0.79
     },
     {
       "symbol": "LUPIN.NS",
       "name": "Lupin",
       "market": "IN",
-      "price": "\u20b91,987.00",
-      "change": "+14.30",
-      "change_pct": "+0.72%",
-      "is_positive": true
+      "currency": "INR",
+      "price": 1992.2,
+      "change": 0.99
     },
     {
       "symbol": "LLY",
       "name": "Eli Lilly",
       "market": "INT",
-      "price": "$1,288.30",
-      "change": "+6.39",
-      "change_pct": "+0.50%",
-      "is_positive": true
+      "currency": "USD",
+      "price": 1288.3,
+      "change": 0.5
     },
     {
       "symbol": "NVO",
       "name": "Novo Nordisk",
       "market": "INT",
-      "price": "$38.29",
-      "change": "-0.38",
-      "change_pct": "-0.98%",
-      "is_positive": false
+      "currency": "USD",
+      "price": 38.29,
+      "change": -0.98
     },
     {
       "symbol": "JNJ",
       "name": "Johnson & Johnson",
       "market": "INT",
-      "price": "$271.04",
-      "change": "+2.31",
-      "change_pct": "+0.86%",
-      "is_positive": true
+      "currency": "USD",
+      "price": 271.04,
+      "change": 0.86
     },
     {
       "symbol": "PFE",
       "name": "Pfizer",
       "market": "INT",
-      "price": "$29.45",
-      "change": "-0.35",
-      "change_pct": "-1.17%",
-      "is_positive": false
+      "currency": "USD",
+      "price": 29.45,
+      "change": -1.17
     },
     {
       "symbol": "AZN",
       "name": "AstraZeneca",
       "market": "INT",
-      "price": "$169.51",
-      "change": "-0.57",
-      "change_pct": "-0.34%",
-      "is_positive": false
+      "currency": "USD",
+      "price": 169.51,
+      "change": -0.34
     }
   ],
-  "articles": [
-    {
-      "title": "FDA Launches New Program to Advance Neuroscience Medical Product Development",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-new-program-advance-neuroscience-medical-product-development",
-      "raw_desc": "FDA announces the launch of the Neuroscience Advancement and Innovation Nexus (NAIN), a new agency program aligned with the Trump Administration\u2019s efforts to accelerate medical inn",
-      "source": "FDA Regulatory",
-      "date": "Oct 22, 2026",
-      "ai_summary": "FDA announces the launch of the Neuroscience Advancement and Innovation Nexus (NAIN), a new agency program aligned with the Trump Administration\u2019s efforts to accelerate medical inn",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Approves First-of-Its-Kind Chronic Hepatitis B Treatment",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
-      "raw_desc": "FDA today approved Hibsago (bepirovirsen) injection, in combination with existing antiviral therapy, to treat chronic hepatitis B virus (HBV) infection in certain adults without ci",
-      "source": "FDA Regulatory",
-      "date": "Oct 20, 2026",
-      "ai_summary": "FDA today approved Hibsago (bepirovirsen) injection, in combination with existing antiviral therapy, to treat chronic hepatitis B virus (HBV) infection in certain adults without ci",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Approves Once-Weekly Generic Hormone Therapy Patch for Women",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
-      "raw_desc": "Today, the U.S. Food and Drug Administration approved the first generic of Climara Pro (estradiol and levonorgestrel transdermal system, 0.045 mg per day/0.015 mg), a transdermal h",
-      "source": "FDA Regulatory",
-      "date": "Oct 20, 2026",
-      "ai_summary": "Today, the U.S. Food and Drug Administration approved the first generic of Climara Pro (estradiol and levonorgestrel transdermal system, 0.045 mg per day/0.015 mg), a transdermal h",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Issues Final Guidance on Prescription Drug Apps and Software",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
-      "raw_desc": "The U.S. Food and Drug Administration today released final guidance establishing a clear framework for how drug companies can develop, distribute, and label apps used alongside the",
-      "source": "FDA Regulatory",
-      "date": "Oct 20, 2026",
-      "ai_summary": "The U.S. Food and Drug Administration today released final guidance establishing a clear framework for how drug companies can develop, distribute, and label apps used alongside the",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Approves Immunotherapy That May Allow Certain Patients with Rectal Cancer to Avoid Chemotherapy, Radiation and Surgery",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
-      "raw_desc": "The U.S. Food and Drug Administration today granted accelerated approval for a new use of the immunotherapy Jemperli (dostarlimab-gxly) that may allow some patients with locally ad",
-      "source": "FDA Regulatory",
-      "date": "Oct 19, 2026",
-      "ai_summary": "The U.S. Food and Drug Administration today granted accelerated approval for a new use of the immunotherapy Jemperli (dostarlimab-gxly) that may allow some patients with locally ad",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Launches the Rare Disease Framework Initiative to Develop a Holistic, Fit-For-Purpose Framework for Rare Disease Drug Development",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
-      "raw_desc": "The U.S. Food and Drug Administration, a division within the U.S. Department of Health and Human Services (HHS), today announced the Rare Disease Framework Initiative to reimagine",
-      "source": "FDA Regulatory",
-      "date": "Oct 14, 2026",
-      "ai_summary": "The U.S. Food and Drug Administration, a division within the U.S. Department of Health and Human Services (HHS), today announced the Rare Disease Framework Initiative to reimagine",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
-      "raw_desc": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
-      "source": "FDA Regulatory",
-      "date": "Oct 14, 2026",
-      "ai_summary": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "FDA Seeks Public Input to Support Ibogaine Research",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-support-ibogaine-research",
-      "raw_desc": "The U.S. Food and Drug Administration today announced a request for information (RFI) describing approaches the agency is considering for the design of early-phase clinical trials",
-      "source": "FDA Regulatory",
-      "date": "Oct 05, 2026",
-      "ai_summary": "The U.S. Food and Drug Administration today announced a request for information (RFI) describing approaches the agency is considering for the design of early-phase clinical trials",
-      "category": "FDA & APPROVALS"
-    },
-    {
-      "title": "Chemo drug supply crisis hits cancer care",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/chemo-drug-supply-crisis-hits-cancer-care/131519357",
-      "raw_desc": "Hospitals are reporting dwindling stocks, while patients and their families are being forced to hunt for pharmacies and distributors which have the drugs with them.",
-      "source": "ET Pharma",
-      "date": "Jun 05, 2026",
-      "ai_summary": "Hospitals are reporting dwindling stocks, while patients and their families are being forced to hunt for pharmacies and distributors which have the drugs with them.",
-      "category": "CLINICAL & DRUGS"
-    },
-    {
-      "title": "Your weight-loss drugs set to become cheaper",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/your-weight-loss-drugs-set-to-become-cheaper/128881451",
-      "raw_desc": "India&#039;s anti-obesity market is set for a price revolution as multiple pharmaceutical companies prepare to launch affordable generic versions of blockbuster weight-loss drugs W",
-      "source": "ET Pharma",
-      "date": "Feb 28, 2026",
-      "ai_summary": "India&#039;s anti-obesity market is set for a price revolution as multiple pharmaceutical companies prepare to launch affordable generic versions of blockbuster weight-loss drugs W",
-      "category": "CLINICAL & DRUGS"
-    },
-    {
-      "title": "UK drugs giant AstraZeneca announces $15 bn investment in China",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/uk-drugs-giant-astrazeneca-announces-15-bn-investment-in-china/127776933",
-      "raw_desc": "China is AstraZeneca&#039;s second-largest market after the United States, where the company has recently invested heavily under pressure from President Donald Trump.",
-      "source": "ET Pharma",
-      "date": "Jan 29, 2026",
-      "ai_summary": "China is AstraZeneca&#039;s second-largest market after the United States, where the company has recently invested heavily under pressure from President Donald Trump.",
-      "category": "M&A & FINANCIALS"
-    },
-    {
-      "title": "Yellow Fertility partners CARE IVF to expand presence in east, northeast India",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/yellow-fertility-partners-care-ivf-to-expand-presence-in-east-northeast-india/126523748",
-      "raw_desc": "The initiative is aimed at improving access to affordable in-vitro fertilisation (IVF) and assisted reproductive technology (ART) services, particularly in areas where patients oft",
-      "source": "ET Pharma",
-      "date": "Jan 14, 2026",
-      "ai_summary": "The initiative is aimed at improving access to affordable in-vitro fertilisation (IVF) and assisted reproductive technology (ART) services, particularly in areas where patients oft",
-      "category": "INDUSTRY GENERAL"
-    },
-    {
-      "title": "Novo Nordisk&#039;s US public affairs head leaves company, memo shows",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/novo-nordisks-us-public-affairs-head-leaves-company-memo-shows/126371228",
-      "raw_desc": "The departure, previously unreported, sees U.S. public affairs head Jennifer Duck leave the firm. It follows a major global restructuring under CEO Mike Doustdar that includes cutt",
-      "source": "ET Pharma",
-      "date": "Jan 06, 2026",
-      "ai_summary": "The departure, previously unreported, sees U.S. public affairs head Jennifer Duck leave the firm. It follows a major global restructuring under CEO Mike Doustdar that includes cutt",
-      "category": "INDUSTRY GENERAL"
-    },
-    {
-      "title": "Health push makes nutraceuticals India\u2019s fastest-growing consumer segment, says Earthful",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/health-push-makes-nutraceuticals-indias-fastest-growing-consumer-segment-says-earthful/126150710",
-      "raw_desc": "The company that sells nutrition supplements, is starting a community initiative focused on menopause awareness, offering stipends to women over 40 to lead conversations at the loc",
-      "source": "ET Pharma",
-      "date": "Dec 24, 2025",
-      "ai_summary": "The company that sells nutrition supplements, is starting a community initiative focused on menopause awareness, offering stipends to women over 40 to lead conversations at the loc",
-      "category": "INDUSTRY GENERAL"
-    },
-    {
-      "title": "Alzheimer&#039;s drug hunt learns from cancer fight&#039;s multi-target playbook",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/alzheimers-drug-hunt-learns-from-cancer-fights-multi-target-playbook/125933212",
-      "raw_desc": "Blood and genetic tests to accurately identify biomarkers of the disease are becoming available, but most diagnoses require a spinal tap or expensive PET scan. Not all patients are",
-      "source": "ET Pharma",
-      "date": "Dec 12, 2025",
-      "ai_summary": "Blood and genetic tests to accurately identify biomarkers of the disease are becoming available, but most diagnoses require a spinal tap or expensive PET scan. Not all patients are",
-      "category": "CLINICAL & DRUGS"
-    },
-    {
-      "title": "What Holds the Future of Pharma in the Middle East?",
-      "link": "https://health.economictimes.indiatimes.com/news/pharma/pharma-industry/what-holds-the-future-of-pharma-in-the-middle-east/125690633",
-      "raw_desc": "At the Economic Times Healthcare Leaders Summit Middle East 2025, pharmaceutical experts examined the shifting dynamics of the region\u2019s drug market, discussing emerging trends, reg",
-      "source": "ET Pharma",
-      "date": "Dec 01, 2025",
-      "ai_summary": "At the Economic Times Healthcare Leaders Summit Middle East 2025, pharmaceutical experts examined the shifting dynamics of the region\u2019s drug market, discussing emerging trends, reg",
-      "category": "INDUSTRY GENERAL"
-    }
-  ]
+  "feeds": []
 }
