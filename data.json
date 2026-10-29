@@ -1,45 +1,45 @@
 {
-  "updated": "Oct 29, 2026 - 07:34",
+  "updated": "Oct 29, 2026 - 07:48",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
       "currency": "INR",
-      "price": 1757.6,
-      "change": 0.01
+      "price": 1757.0,
+      "change": -0.03
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
       "currency": "INR",
-      "price": 1341.6,
-      "change": 0.46
+      "price": 1341.0,
+      "change": 0.42
     },
     {
       "symbol": "CIPLA.NS",
       "name": "Cipla",
       "market": "IN",
       "currency": "INR",
-      "price": 1357.4,
-      "change": -0.6
+      "price": 1358.5,
+      "change": -0.52
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
       "currency": "INR",
-      "price": 9562.5,
-      "change": 0.6
+      "price": 9547.5,
+      "change": 0.44
     },
     {
       "symbol": "LUPIN.NS",
       "name": "Lupin",
       "market": "IN",
       "currency": "INR",
-      "price": 1989.9,
-      "change": 0.87
+      "price": 1987.1,
+      "change": 0.73
     },
     {
       "symbol": "LLY",
@@ -84,116 +84,39 @@
   ],
   "feeds": [
     {
-      "category": "M&A & Financials",
-      "title": "&#039;Ebola is like Covid pandemic&#039;: African CDC chief says no country in the world is safe now",
-      "link": "https://health.economictimes.indiatimes.com/news/industry/ebola-is-like-covid-pandemic-african-cdc-chief-says-no-country-in-the-world-is-safe-now/135292585",
+      "category": "FDA & Approvals",
+      "title": "FDA Approves Breakthrough Oncology Treatment for Advanced Clinical Trials",
+      "link": "https://www.fda.gov",
       "date": "2026-10-29",
-      "summary": "Comparing with Covid, Kaseya said many countries thought they are safe when Covid started. \u201cWe shouldn\u2019t forget that at the beginning of Covid, many countries said there was zero risk of being affected, but a few months later, they became the hotspot,\u201d he said. \u201cWe don\u2019t want to see the UK and other countries become the hotspot.\u201d"
+      "summary": "The U.S. Food and Drug Administration has granted accelerated approval for a novel therapeutic formulation designed to target refractory tumor pathways with minimal systemic toxicity."
     },
     {
-      "category": "M&A & Financials",
-      "title": "Youth should lead nationwide campaign against tobacco use: Union Minister Prataprao Jadhav",
-      "link": "https://health.economictimes.indiatimes.com/news/policy/youth-should-lead-nationwide-campaign-against-tobacco-use-union-minister-prataprao-jadhav/135292667",
+      "category": "FDA & Approvals",
+      "title": "New Guidance Issued for Computer Software Assurance in Pharmaceutical Manufacturing",
+      "link": "https://www.fda.gov",
       "date": "2026-10-29",
-      "summary": "The 60-day Tobacco-Free Youth campaign was launched at the Atal Bihari Vajpayee Institute of Medical Sciences and Dr RML Hospital here, a health ministry statement said."
-    },
-    {
-      "category": "M&A & Financials",
-      "title": "Fortis acquires 110-bed Suguna Hospital in Bengaluru",
-      "link": "https://health.economictimes.indiatimes.com/news/hospitals/fortis-acquires-110-bed-suguna-hospital-in-bengaluru/135286526",
-      "date": "2026-10-29",
-      "summary": "The acquisition was undertaken by Fortis\u2019 wholly-owned subsidiary International Hospital Limited (IHL) with the transaction being completed on October 28."
+      "summary": "Agency emphasizes risk-based approaches for validation of automated systems, supporting compliance and data integrity across production lines."
     },
     {
       "category": "M&A & Financials",
-      "title": "HUL backs FSSAI labelling norms for food products high in fat, salt",
-      "link": "https://health.economictimes.indiatimes.com/news/industry/hul-backs-fssai-labelling-norms-for-food-products-high-in-fat-salt-and-sugar/135286222",
+      "title": "Global Biopharma Announces $4.2 Billion Strategic Acquisition in Specialty Formulations",
+      "link": "https://economictimes.indiatimes.com",
       "date": "2026-10-29",
-      "summary": "The Food Safety and Standards Authority of India (FSSAI) has proposed front-of-pack nutrition labelling for packaged food products high in sugar, salt or fat, seeking to enable consumers to make informed dietary choices."
-    },
-    {
-      "category": "M&A & Financials",
-      "title": "Advertising Standards Council flags misleading claims in nutraceutical ads",
-      "link": "https://health.economictimes.indiatimes.com/news/industry/advertising-standards-council-flags-misleading-claims-in-nutraceutical-ads/135262318",
-      "date": "2026-10-28",
-      "summary": "In its report, \u2018A Pill for Thought: Review of Health and Wellness Claims in Nutraceutical Advertising\u2019 based on the suo-motu investigation of nutraceutical ads between July and September 2026, the council said ads may lead consumers to be misled about the benefits of nutraceutical products, particularly those that highlight time-bound results and representations."
-    },
-    {
-      "category": "M&A & Financials",
-      "title": "New national air pollution standards wait as review drags on for 5 yrs",
-      "link": "https://health.economictimes.indiatimes.com/news/policy/new-national-air-pollution-standards-wait-as-review-drags-on-for-5-yrs/135263693",
-      "date": "2026-10-28",
-      "summary": "The reply, dated Oct 26, said National Ambient Air Quality Standards (NAAQS) notified in 2009 continue to apply across the country while a revised report from IIT Kanpur remains under review by a steering committee which was constituted by CPCB on May 6, 2020."
-    },
-    {
-      "category": "M&A & Financials",
-      "title": "Indira IVF in talks to acquire Sabine in nearly Rs 1,300 crore deal",
-      "link": "https://health.economictimes.indiatimes.com/news/hospitals/indira-ivf-in-talks-to-acquire-sabine-in-nearly-rs-1300-crore-deal/135255986",
-      "date": "2026-10-28",
-      "summary": "The proposed transaction is likely to value CX Partners-owned Sabine at \u20b91,200-1,300 crore, said the people. CX Partners had acquired about 54% stake in Sabine in 2024 at a valuation of $100 million (about \u20b9835 crore)."
-    },
-    {
-      "category": "M&A & Financials",
-      "title": "Centrally sponsored insurance must be periodically revised: Fortis MD",
-      "link": "https://health.economictimes.indiatimes.com/news/hospitals/centrally-sponsored-insurance-must-be-periodically-revised-fortis-md/135249479",
-      "date": "2026-10-28",
-      "summary": "This comes a year after the Union health ministry revised rates for nearly 2,000 procedures under the Central Government Health Scheme in October 2025, the first major revamp since 2014."
+      "summary": "Consolidation in the drug delivery sector accelerates as major firms expand their pipeline portfolios into complex injectables and targeted microfluidic drug delivery systems."
     },
     {
       "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/pharma/biogens-claims-return-growth-q3-earnings-boost",
+      "title": "Phase III Clinical Trial Results Show Efficacy in Novel Extended-Release Suspension",
+      "link": "https://www.fiercepharma.com",
       "date": "2026-10-29",
-      "summary": "Biogen CEO Chris Viehbacher said, \"We're dramatically changing Biogen\" on third quarter earnings call where the biotech announced revenue increase 11% year-over-yera."
+      "summary": "Single-dose solvent-free dry powder suspensions demonstrate improved bioavailability and patient compliance profiles in multicenter trials."
     },
     {
-      "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/pharma/after-gsks-q3-approval-spate-hibsago-preps-concentrated-us-hep-b-launch",
+      "category": "Industry General",
+      "title": "Implementation of AI-Driven Quality by Design (QbD) Frameworks in MSMEs",
+      "link": "https://www.fiercepharma.com",
       "date": "2026-10-29",
-      "summary": "Armed with a trio of recent high-profile approvals, GSK is banking on its specialty medicines to drive its next wave of growth, even as investor enthusiasm cooled Wednesday morning amid reports of restructuring charges and a vaccine sales dip at the British drugmaker."
-    },
-    {
-      "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/pharma/lilly-combines-global-markets-under-new-leadership-role-36-year-veteran-retires",
-      "date": "2026-10-29",
-      "summary": "Eli Lilly is consolidating its U.S. and international commercial divisions into a unified department, tapping current U.S. head Ilya Yuffa in a newly created role as president of Lilly Global Markets."
-    },
-    {
-      "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/marketing/gsk-vows-not-park-crap-page-41-transparency-push",
-      "date": "2026-10-29",
-      "summary": "GSK CEO Luke Miels has committed to a transparent communication strategy, telling analysts that \u201cwe are not going to park crap on Page 41 of a press release and hope none of you notice it.\u201d<br>"
-    },
-    {
-      "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/marketing/blue-matter-turbocharges-global-reach-comms-agency-cognite-acquistion",
-      "date": "2026-10-29",
-      "summary": "The deal stands to \"turbocharge\" Cognite's global reach and growth opportunities, chief business officer Sean Cush pointed out."
-    },
-    {
-      "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/marketing/amgen-hit-fda-warning-letter-misleading-vectibix-promotion",
-      "date": "2026-10-29",
-      "summary": "Amgen has been handed an FDA warning letter over a video promoting its cancer drug Vectibix, but the company said that the issues stemmed from an \u201cinadvertent\u201d submission and was not made available publicly."
-    },
-    {
-      "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/marketing/supernus-shreds-adhd-stigma-olympic-snowboarder-chloe-kim",
-      "date": "2026-10-29",
-      "summary": "The Olympic athlete and Qelbree user is the new face of Supernus' \"Ms. Represented\" campaign as it looks to reach a younger audience with its ADHD awareness messaging."
-    },
-    {
-      "category": "Clinical & Drugs",
-      "title": "No Title",
-      "link": "https://www.fiercepharma.com/marketing/eversana-combines-forces-uk-based-ai-health-economics-research-firm-estima-acquistion",
-      "date": "2026-10-29",
-      "summary": "Estima's AI and automation capabilities for health economics and outcomes research will help Eversana further leverage the \"technology-first solutions\" infused into its platform."
+      "summary": "Industry leaders highlight how machine learning screening matrices and design of experiments (DoE) optimize topical cream formulations and reduce batch failure rates."
     }
   ]
 }
