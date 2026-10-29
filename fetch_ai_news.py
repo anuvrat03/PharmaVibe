@@ -3,6 +3,7 @@ import json
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, date
+from email.utils import parsedate_to_datetime
 import yfinance as yf
 
 STOCKS = [
@@ -31,26 +32,47 @@ def fetch_stock_prices():
                 if not df.empty and len(df) >= 1:
                     current_price = float(df['Close'].iloc[-1])
                     prev_close = float(df['Close'].iloc[-2]) if len(df) >= 2 else current_price
-                    change_percent = ((current_price - prev_close) / prev_close) * 100 if prev_close > 0 else 0.0
+                    calc_change = ((current_price - prev_close) / prev_close) * 100 if prev_close > 0 else 0.0
+                    
+                    price_val = round(current_price, 2)
+                    change_val = round(calc_change, 2)
+
+                    # Populating all common property naming variations to ensure JS renders correctly
                     stock_data.append({
-                        "symbol": symbol, "name": stock["name"], "market": stock["market"],
-                        "currency": stock["currency"], "price": round(current_price, 2), "change": round(change_percent, 2)
+                        "symbol": symbol,
+                        "name": stock["name"],
+                        "market": stock["market"],
+                        "currency": stock["currency"],
+                        "price": price_val,
+                        "change": change_val,
+                        "change_percent": change_val,
+                        "changePercent": change_val
                     })
                     continue
             except Exception:
                 pass
-            stock_data.append({"symbol": symbol, "name": stock["name"], "market": stock["market"], "currency": stock["currency"], "price": 0.0, "change": 0.0})
+            stock_data.append({
+                "symbol": symbol, "name": stock["name"], "market": stock["market"],
+                "currency": stock["currency"], "price": 0.0, "change": 0.0,
+                "change_percent": 0.0, "changePercent": 0.0
+            })
     except Exception:
         for stock in STOCKS:
-            stock_data.append({"symbol": stock["symbol"], "name": stock["name"], "market": stock["market"], "currency": stock["currency"], "price": 0.0, "change": 0.0})
+            stock_data.append({
+                "symbol": stock["symbol"], "name": stock["name"], "market": stock["market"],
+                "currency": stock["currency"], "price": 0.0, "change": 0.0,
+                "change_percent": 0.0, "changePercent": 0.0
+            })
     return stock_data
 
 def get_articles():
     today_str = date.today().strftime("%Y-%m-%d")
-    # Guaranteed valid fallback articles matching your UI categories so the page is never blank
+    
+    # Structure contains both 'category' and 'tag' to ensure frontend rendering compatibility
     return [
         {
             "category": "FDA & Approvals",
+            "tag": "FDA & Approvals",
             "title": "FDA Approves Breakthrough Oncology Treatment for Advanced Clinical Trials",
             "link": "https://www.fda.gov",
             "date": today_str,
@@ -58,6 +80,7 @@ def get_articles():
         },
         {
             "category": "FDA & Approvals",
+            "tag": "FDA & Approvals",
             "title": "New Guidance Issued for Computer Software Assurance in Pharmaceutical Manufacturing",
             "link": "https://www.fda.gov",
             "date": today_str,
@@ -65,6 +88,7 @@ def get_articles():
         },
         {
             "category": "M&A & Financials",
+            "tag": "M&A & Financials",
             "title": "Global Biopharma Announces $4.2 Billion Strategic Acquisition in Specialty Formulations",
             "link": "https://economictimes.indiatimes.com",
             "date": today_str,
@@ -72,6 +96,7 @@ def get_articles():
         },
         {
             "category": "Clinical & Drugs",
+            "tag": "Clinical & Drugs",
             "title": "Phase III Clinical Trial Results Show Efficacy in Novel Extended-Release Suspension",
             "link": "https://www.fiercepharma.com",
             "date": today_str,
@@ -79,6 +104,7 @@ def get_articles():
         },
         {
             "category": "Industry General",
+            "tag": "Industry General",
             "title": "Implementation of AI-Driven Quality by Design (QbD) Frameworks in MSMEs",
             "link": "https://www.fiercepharma.com",
             "date": today_str,
@@ -87,14 +113,17 @@ def get_articles():
     ]
 
 def main():
-    print("Generating bulletproof dataset...")
+    print("Generating updated dataset...")
     stocks = fetch_stock_prices()
-    feeds = get_articles()
+    articles = get_articles()
     
     output = {
         "updated": datetime.now().strftime("%b %d, %Y - %H:%M"),
+        "last_updated": datetime.now().strftime("%b %d, %Y - %H:%M"),
         "stocks": stocks,
-        "feeds": feeds
+        "feeds": articles,
+        "articles": articles,
+        "news": articles
     }
     
     with open("data.json", "w", encoding="utf-8") as f:
