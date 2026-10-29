@@ -1,221 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <title>PharmaVibe — Executive Intelligence</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --bg-color: #f4f7fa; 
-      --card-bg: #ffffff; 
-      --card-border: #e2e8f0;
-      --text-main: #0f172a; 
-      --text-muted: #64748b; 
-      --accent-blue: #0284c7;
-      --accent-red: #dc2626;
-      --accent-green: #16a34a;
-      --shadow: 0 4px 6px -1px rgba(0,0,0,0.04), 0 2px 4px -2px rgba(0,0,0,0.03);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-main); padding-bottom: 60px; -webkit-font-smoothing: antialiased; }
-    
-    header { background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--card-border); padding: 14px 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
-    .header-container { max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-    
-    .logo-text { 
-      font-family: 'Pacifico', cursive; 
-      font-size: 32px; 
-      background: linear-gradient(135deg, #0284c7 0%, #2563eb 40%, #dc2626 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
-    .live-badge { background: rgba(220, 38, 38, 0.08); color: var(--accent-red); border: 1px solid rgba(220, 38, 38, 0.2); padding: 4px 12px; border-radius: 20px; font-weight: 700; font-size: 11.5px; display: flex; align-items: center; gap: 6px; }
-    .pulse-dot { width: 7px; height: 7px; background-color: var(--accent-red); border-radius: 50%; box-shadow: 0 0 6px var(--accent-red); animation: pulse 1.5s infinite; }
-    .updated-time { font-size: 11px; color: var(--text-muted); font-weight: 600; }
-    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
-
-    /* Stock Ticker Banner */
-    .stock-ticker-wrapper { background: #0f172a; color: #fff; padding: 10px 0; overflow-x: auto; white-space: nowrap; border-bottom: 1px solid #1e293b; }
-    .stock-ticker-container { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: flex; gap: 16px; align-items: center; }
-    .stock-tag { font-size: 11px; font-weight: 800; background: #1e293b; padding: 4px 8px; border-radius: 4px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }
-    .stock-item { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; background: #1e293b; padding: 4px 10px; border-radius: 6px; }
-    .stock-name { color: #cbd5e1; }
-    .stock-price { font-weight: 700; color: #fff; }
-    .stock-change.pos { color: #4ade80; }
-    .stock-change.neg { color: #f87171; }
-
-    main { max-width: 1240px; margin: 24px auto 0; padding: 0 20px; }
-
-    .filter-bar { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 12px; margin-bottom: 20px; border-bottom: 1px solid var(--card-border); }
-    .filter-btn { background: #fff; border: 1px solid var(--card-border); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; color: var(--text-muted); cursor: pointer; white-space: nowrap; transition: all 0.2s; }
-    .filter-btn:hover, .filter-btn.active { background: var(--accent-blue); color: #fff; border-color: var(--accent-blue); }
-
-    .section-title { font-size: 19px; font-weight: 800; color: #0f172a; margin: 28px 0 16px; display: flex; align-items: center; gap: 10px; border-left: 4px solid var(--accent-blue); padding-left: 12px; }
-    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
-    
-    .card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow); transition: transform 0.2s ease; }
-    .card:hover { transform: translateY(-3px); border-color: #cbd5e1; }
-    
-    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-    .tag { font-size: 10.5px; font-weight: 800; padding: 3px 8px; border-radius: 5px; background: rgba(2, 132, 199, 0.08); color: var(--accent-blue); text-transform: uppercase; }
-    .source-meta { font-size: 11.5px; color: var(--text-muted); font-weight: 600; }
-    
-    .card-title { font-size: 15.5px; font-weight: 700; color: #0f172a; margin-bottom: 12px; text-decoration: none; line-height: 1.4; display: block; }
-    .card-title:hover { color: var(--accent-blue); }
-    
-    .ai-box { background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3px solid var(--accent-red); padding: 10px 12px; margin-bottom: 14px; border-radius: 0 6px 6px 0; font-size: 13px; color: #334155; line-height: 1.45; }
-    .ai-box strong { color: var(--accent-red); font-weight: 700; }
-    
-    .card-footer { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
-    .pub-date { color: var(--text-muted); font-weight: 500; font-size: 11.5px; }
-    .read-link { color: var(--accent-blue); text-decoration: none; font-weight: 700; font-size: 12.5px; display: inline-flex; align-items: center; gap: 5px; }
-    .read-link:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaVibe - Daily Pharma Intelligence</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
 </head>
-<body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <h1 class="logo-text">PharmaVibe</h1>
-      </div>
-      <div class="header-right">
-        <div class="live-badge">
-          <span class="pulse-dot"></span> Live Intelligence
-        </div>
-        <span class="updated-time" id="feed-updated-time">Updating...</span>
-      </div>
-    </div>
-  </header>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
 
-  <!-- Stock Markets Banner -->
-  <div class="stock-ticker-wrapper">
-    <div class="stock-ticker-container" id="stock-ticker">
-      <span class="stock-tag">Daily Markets (12 PM IST)</span>
-      <span style="font-size: 12px; color: #64748b;">Loading stocks...</span>
-    </div>
-  </div>
-
-  <main>
-    <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterCategory('ALL')">All Feeds</button>
-      <button class="filter-btn" onclick="filterCategory('FDA & APPROVALS')">FDA & Approvals</button>
-      <button class="filter-btn" onclick="filterCategory('M&A & FINANCIALS')">M&A & Financials</button>
-      <button class="filter-btn" onclick="filterCategory('CLINICAL & DRUGS')">Clinical & Drugs</button>
-      <button class="filter-btn" onclick="filterCategory('INDUSTRY GENERAL')">Industry General</button>
-    </div>
-
-    <div id="sections-container">
-      <p style="color: var(--text-muted);">Loading intelligence briefing sections...</p>
-    </div>
-  </main>
-
-  <script>
-    let allArticles = [];
-
-    async function loadData() {
-      try {
-        const res = await fetch('data.json?v=' + new Date().getTime());
-        const data = await res.json();
-        
-        allArticles = data.articles || [];
-        document.getElementById('feed-updated-time').innerText = 'Updated: ' + (data.last_updated || 'Recently');
-
-        if (data.stocks) {
-          renderStocks(data.stocks);
-        }
-
-        renderSections(allArticles);
-      } catch (err) {
-        document.getElementById('sections-container').innerHTML = `<p style="color: #dc2626;">Unable to load data feed.</p>`;
-      }
-    }
-
-    function renderStocks(stocks) {
-      const container = document.getElementById('stock-ticker');
-      let html = `<span class="stock-tag">Market Watch</span>`;
-      
-      stocks.forEach(s => {
-        const cls = s.is_positive ? 'pos' : 'neg';
-        const icon = s.is_positive ? '▲' : '▼';
-        html += `
-          <div class="stock-item">
-            <span class="stock-name">${s.name}</span>
-            <span class="stock-price">${s.price}</span>
-            <span class="stock-change ${cls}">${icon} ${s.change_pct}</span>
-          </div>
-        `;
-      });
-      container.innerHTML = html;
-    }
-
-    function renderSections(articles) {
-      const container = document.getElementById('sections-container');
-      
-      if (!articles.length) {
-        container.innerHTML = `<p style="color: var(--text-muted);">No articles found in this section.</p>`;
-        return;
-      }
-
-      const categories = ['FDA & APPROVALS', 'M&A & FINANCIALS', 'CLINICAL & DRUGS', 'INDUSTRY GENERAL'];
-      let html = '';
-
-      categories.forEach(cat => {
-        const catArticles = articles.filter(a => a.category === cat);
-        if (catArticles.length > 0) {
-          html += `
-            <div class="section-block">
-              <h2 class="section-title"><i class="fas fa-layer-group" style="font-size:15px;"></i> ${cat} (${catArticles.length})</h2>
-              <div class="news-grid">
-                ${catArticles.map(art => `
-                  <article class="card">
-                    <div>
-                      <div class="card-header">
-                        <span class="tag">${art.category}</span>
-                        <span class="source-meta">${art.source}</span>
-                      </div>
-                      <a href="${art.link}" target="_blank" class="card-title">${art.title}</a>
-                      <div class="ai-box">
-                        <strong>📌 Key Takeaway:</strong> ${art.ai_summary}
-                      </div>
-                    </div>
-                    <div class="card-footer">
-                      <span class="pub-date"><i class="far fa-calendar-alt"></i> ${art.date || 'Recent'}</span>
-                      <a href="${art.link}" target="_blank" class="read-link">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                  </article>
-                `).join('')}
-              </div>
+    <!-- Header / Brand Banner -->
+    <header class="bg-white border-b border-slate-200 px-4 py-3 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <h1 class="text-2xl font-extrabold text-blue-600 tracking-tight flex items-center gap-1">
+                <span>Pharma<span class="text-rose-500">Vibe</span></span>
+            </h1>
+            <div class="text-xs text-slate-500 text-right">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-1"></span>
+                <span id="update-timestamp">Live Intelligence</span>
             </div>
-          `;
+        </div>
+    </header>
+
+    <!-- Stock Market Watch Ticker -->
+    <section class="bg-slate-900 text-white border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex items-center px-4 py-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-4 shrink-0">Market Watch</span>
+            <div id="stock-container" class="flex items-center gap-4 overflow-x-auto no-scrollbar whitespace-nowrap text-xs font-medium py-1">
+                <span class="text-slate-500">Loading live stock data...</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Dashboard Container -->
+    <main class="max-w-7xl mx-auto px-4 py-6">
+
+        <!-- Category Filter Pills -->
+        <nav class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-4 mb-6" id="category-filters">
+            <button onclick="filterCategory('All Feeds')" class="filter-btn active bg-blue-600 text-white px-4 py-2 rounded-full text-xs font-semibold shrink-0 shadow-sm transition">All Feeds</button>
+            <button onclick="filterCategory('FDA & Approvals')" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-full text-xs font-semibold shrink-0 transition">FDA & Approvals</button>
+            <button onclick="filterCategory('M&A & Financials')" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-full text-xs font-semibold shrink-0 transition">M&A & Financials</button>
+            <button onclick="filterCategory('Clinical & Drugs')" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-full text-xs font-semibold shrink-0 transition">Clinical & Drugs</button>
+            <button onclick="filterCategory('Industry General')" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-full text-xs font-semibold shrink-0 transition">Industry General</button>
+        </nav>
+
+        <!-- News Feed Grid -->
+        <section id="feed-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div class="col-span-full text-center py-12 text-slate-400 font-medium">Loading latest intelligence...</div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript Data Handler -->
+    <script>
+        let allArticles = [];
+        let currentActiveCategory = 'All Feeds';
+
+        async function loadDashboardData() {
+            try {
+                // Fetch cached static JSON generated by GitHub Actions
+                const response = await fetch('./data.json?t=' + new Date().getTime());
+                if (!response.ok) throw new Error('Failed to load data.json');
+                
+                const data = await response.json();
+
+                // Update Header Timestamp
+                if (data.updated || data.last_updated) {
+                    document.getElementById('update-timestamp').innerText = 'Updated: ' + (data.updated || data.last_updated);
+                }
+
+                // Render Stock Ticker
+                renderStocks(data.stocks || []);
+
+                // Normalize Article Data Structure
+                allArticles = data.feeds || data.articles || data.news || [];
+                renderArticles();
+
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+                document.getElementById('feed-grid').innerHTML = `
+                    <div class="col-span-full bg-white p-6 rounded-xl border border-red-200 text-center">
+                        <p class="text-red-500 font-semibold mb-1">Unable to load news feed</p>
+                        <p class="text-xs text-slate-400">Please verify data.json exists and GitHub Actions run succeeded.</p>
+                    </div>`;
+            }
         }
-      });
 
-      container.innerHTML = html;
-    }
+        function renderStocks(stocks) {
+            const stockContainer = document.getElementById('stock-container');
+            if (!stocks || stocks.length === 0) {
+                stockContainer.innerHTML = `<span class="text-slate-500">Market data unavailable</span>`;
+                return;
+            }
 
-    function filterCategory(category) {
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.innerText.toUpperCase().includes(category.replace(' & ', '')) || (category === 'ALL' && btn.innerText === 'All Feeds'));
-      });
+            stockContainer.innerHTML = stocks.map(stock => {
+                // Safely extract price
+                const price = stock.price !== undefined ? Number(stock.price).toFixed(2) : '0.00';
+                
+                // Safely extract percentage change from all possible key variations
+                let changeVal = 0.0;
+                if (stock.change_percent !== undefined) changeVal = stock.change_percent;
+                else if (stock.changePercent !== undefined) changeVal = stock.changePercent;
+                else if (stock.change !== undefined) changeVal = stock.change;
 
-      if (category === 'ALL') {
-        renderSections(allArticles);
-      } else {
-        const filtered = allArticles.filter(a => a.category === category);
-        renderSections(filtered);
-      }
-    }
+                changeVal = Number(changeVal) || 0.0;
+                const isPositive = changeVal >= 0;
+                const arrow = isPositive ? '▲' : '▼';
+                const colorClass = isPositive ? 'text-emerald-400' : 'text-rose-400';
+                const currencySymbol = stock.currency === 'INR' ? '₹' : (stock.currency === 'USD' ? '$' : '');
 
-    loadData();
-  </script>
+                return `
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-800 rounded-md shrink-0">
+                        <span class="text-slate-300 font-medium">${stock.name}</span>
+                        <span class="text-white font-bold">${currencySymbol}${price}</span>
+                        <span class="${colorClass} text-[11px] font-semibold">${arrow} ${Math.abs(changeVal).toFixed(2)}%</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function filterCategory(categoryName) {
+            currentActiveCategory = categoryName;
+
+            // Update Active Pill UI Style
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.innerText.trim() === categoryName) {
+                    btn.className = 'filter-btn active bg-blue-600 text-white px-4 py-2 rounded-full text-xs font-semibold shrink-0 shadow-sm transition';
+                } else {
+                    btn.className = 'filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-full text-xs font-semibold shrink-0 transition';
+                }
+            });
+
+            renderArticles();
+        }
+
+        function renderArticles() {
+            const grid = document.getElementById('feed-grid');
+
+            // Filter logic matching both category and tag
+            const filtered = allArticles.filter(art => {
+                if (currentActiveCategory === 'All Feeds') return true;
+                const artCat = (art.category || art.tag || '').toLowerCase().trim();
+                const targetCat = currentActiveCategory.toLowerCase().trim();
+                return artCat === targetCat;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full bg-white p-8 rounded-xl border border-slate-200 text-center">
+                        <p class="text-slate-500 font-medium">No articles found in this section.</p>
+                        <p class="text-xs text-slate-400 mt-1">Select another tab or check back after the next scheduled update.</p>
+                    </div>`;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(item => `
+                <article class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="inline-block bg-blue-50 text-blue-700 font-bold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md">
+                                ${item.category || item.tag || 'General'}
+                            </span>
+                            <span class="text-xs text-slate-400 font-medium">${item.date || 'Today'}</span>
+                        </div>
+                        <h2 class="text-base font-bold text-slate-900 mb-2 leading-snug hover:text-blue-600 transition">
+                            <a href="${item.link || '#'}" target="_blank" rel="noopener noreferrer">${item.title}</a>
+                        </h2>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            ${item.summary || item.description || ''}
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <a href="${item.link || '#'}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1 transition">
+                            Read Article &rarr;
+                        </a>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // Initialize Dashboard on Load
+        document.addEventListener('DOMContentLoaded', loadDashboardData);
+    </script>
 </body>
 </html>
