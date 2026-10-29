@@ -1,11 +1,7 @@
 import os
 import json
-import urllib.request
-import xml.etree.ElementTree as ET
 from datetime import datetime, date
-from email.utils import parsedate_to_datetime
-
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+import yfinance as yf
 
 RSS_FEEDS = [
     {"name": "FDA Regulatory", "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"},
@@ -14,15 +10,12 @@ RSS_FEEDS = [
     {"name": "Pharma News", "url": "https://pmn.feedify.net/rss"}
 ]
 
-# Tickers: 5 Top Indian & 5 Top International Pharma Companies
 STOCKS = [
-    # Indian Pharma (NSE symbols)
     {"symbol": "SUNPHARMA.NS", "name": "Sun Pharma", "market": "IN", "currency": "INR"},
     {"symbol": "DRREDDY.NS", "name": "Dr. Reddy's", "market": "IN", "currency": "INR"},
     {"symbol": "CIPLA.NS", "name": "Cipla", "market": "IN", "currency": "INR"},
     {"symbol": "DIVISLAB.NS", "name": "Divi's Lab", "market": "IN", "currency": "INR"},
     {"symbol": "LUPIN.NS", "name": "Lupin", "market": "IN", "currency": "INR"},
-    # Global Pharma
     {"symbol": "LLY", "name": "Eli Lilly", "market": "INT", "currency": "USD"},
     {"symbol": "NVO", "name": "Novo Nordisk", "market": "INT", "currency": "USD"},
     {"symbol": "JNJ", "name": "Johnson & Johnson", "market": "INT", "currency": "USD"},
@@ -31,38 +24,52 @@ STOCKS = [
 ]
 
 def fetch_stock_prices():
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
-    }
     stock_data = []
-
-    for stock in STOCKS:
-        symbol = stock["symbol"]
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=1d"
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                data = json.loads(resp.read().decode('utf-8'))
-                result = data['chart']['result'][0]
-                meta = result['meta']
+    symbols = [stock["symbol"] for stock in STOCKS]
+    
+    try:
+        # Download multi-ticker historical data for the last 5 days to reliably capture the latest close and previous close
+        data = yf.download(symbols, period="5d", progress=False, group_by="ticker")
+        
+        for stock in STOCKS:
+            symbol = stock["symbol"]
+            try:
+                # Extract individual ticker data frame
+                df = data[symbol] if len(symbols) > 1 else data
+                df = df.dropna(subset=['Close'])
                 
-                current_price = meta.get('regularMarketPrice')
-                previous_close = meta.get('chartPreviousClose') or meta.get('previousClose')
+                if not df.empty and len(df) >= 1:
+                    current_price = float(df['Close'].iloc[-1])
+                    prev_close = float(df['Close'].iloc[-2]) if len(df) >= 2 else current_price
+                    
+                    change_percent = 0.0
+                    if prev_close > 0:
+                        change_percent = ((current_price - prev_close) / prev_close) * 100
+                        
+                    stock_data.append({
+                        "symbol": symbol,
+                        "name": stock["name"],
+                        "market": stock["market"],
+                        "currency": stock["currency"],
+                        "price": round(current_price, 2),
+                        "change": round(change_percent, 2)
+                    })
+                    continue
+            except Exception as inner_e:
+                print(f"Error parsing {symbol}: {inner_e}")
                 
-                change_percent = 0.0
-                if current_price and previous_close:
-                    change_percent = ((current_price - previous_close) / previous_close) * 100
-
-                stock_data.append({
-                    "symbol": stock["symbol"],
-                    "name": stock["name"],
-                    "market": stock["market"],
-                    "currency": stock["currency"],
-                    "price": round(current_price, 2) if current_price else 0.0,
-                    "change": round(change_percent, 2)
-                })
-        except Exception as e:
-            print(f"Error fetching {symbol}: {e}")
+            # Fallback if specific ticker fails
+            stock_data.append({
+                "symbol": symbol,
+                "name": stock["name"],
+                "market": stock["market"],
+                "currency": stock["currency"],
+                "price": 0.0,
+                "change": 0.0
+            })
+    except Exception as e:
+        print(f"Error downloading stock batch: {e}")
+        for stock in STOCKS:
             stock_data.append({
                 "symbol": stock["symbol"],
                 "name": stock["name"],
@@ -75,24 +82,18 @@ def fetch_stock_prices():
     return stock_data
 
 def main():
-    print("Starting data fetch...")
+    print("Starting data fetch with yfinance...")
     stocks = fetch_stock_prices()
     
-    # Load existing data or initialize structure
     output = {
         "updated": datetime.now().strftime("%b %d, %Y - %H:%M"),
         "stocks": stocks,
         "feeds": []
     }
     
-    # Simple feed processing pass to ensure today's date injection
-    today_str = date.today().strftime("%Y-%m-%d")
-    print(f"Current injection date: {today_str}")
-
-    # Save output to data.json for GitHub Pages
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
-    print("data.json updated successfully!")
+    print("data.json updated successfully with live stocks!")
 
 if __name__ == "__main__":
     main()
