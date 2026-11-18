@@ -1,23 +1,23 @@
 {
-  "updated": "Nov 17, 2026 - 12:49",
-  "last_updated": "Nov 17, 2026 - 12:49",
+  "updated": "Nov 18, 2026 - 12:43",
+  "last_updated": "Nov 18, 2026 - 12:43",
   "stocks": [
     {
       "symbol": "SUNPHARMA.NS",
       "name": "Sun Pharma",
       "market": "IN",
       "currency": "INR",
-      "price": 1870.0,
-      "change": 0.13,
-      "change_percent": 0.13,
-      "changePercent": 0.13
+      "price": 1871.5,
+      "change": 0.08,
+      "change_percent": 0.08,
+      "changePercent": 0.08
     },
     {
       "symbol": "DRREDDY.NS",
       "name": "Dr. Reddy's",
       "market": "IN",
       "currency": "INR",
-      "price": 1388.0,
+      "price": 1398.2,
       "change": 0.73,
       "change_percent": 0.73,
       "changePercent": 0.73
@@ -27,80 +27,80 @@
       "name": "Cipla",
       "market": "IN",
       "currency": "INR",
-      "price": 1388.0,
-      "change": -0.47,
-      "change_percent": -0.47,
-      "changePercent": -0.47
+      "price": 1417.0,
+      "change": 2.09,
+      "change_percent": 2.09,
+      "changePercent": 2.09
     },
     {
       "symbol": "DIVISLAB.NS",
       "name": "Divi's Lab",
       "market": "IN",
       "currency": "INR",
-      "price": 11150.0,
-      "change": 0.63,
-      "change_percent": 0.63,
-      "changePercent": 0.63
+      "price": 11049.0,
+      "change": -0.91,
+      "change_percent": -0.91,
+      "changePercent": -0.91
     },
     {
       "symbol": "LUPIN.NS",
       "name": "Lupin",
       "market": "IN",
       "currency": "INR",
-      "price": 1950.0,
-      "change": -1.35,
-      "change_percent": -1.35,
-      "changePercent": -1.35
+      "price": 1971.9,
+      "change": 1.12,
+      "change_percent": 1.12,
+      "changePercent": 1.12
     },
     {
       "symbol": "LLY",
       "name": "Eli Lilly",
       "market": "INT",
       "currency": "USD",
-      "price": 1431.67,
-      "change": -0.82,
-      "change_percent": -0.82,
-      "changePercent": -0.82
+      "price": 1415.55,
+      "change": -1.13,
+      "change_percent": -1.13,
+      "changePercent": -1.13
     },
     {
       "symbol": "NVO",
       "name": "Novo Nordisk",
       "market": "INT",
       "currency": "USD",
-      "price": 41.6,
-      "change": -0.07,
-      "change_percent": -0.07,
-      "changePercent": -0.07
+      "price": 40.7,
+      "change": -2.16,
+      "change_percent": -2.16,
+      "changePercent": -2.16
     },
     {
       "symbol": "JNJ",
       "name": "Johnson & Johnson",
       "market": "INT",
       "currency": "USD",
-      "price": 282.55,
-      "change": -1.12,
-      "change_percent": -1.12,
-      "changePercent": -1.12
+      "price": 278.7,
+      "change": -1.36,
+      "change_percent": -1.36,
+      "changePercent": -1.36
     },
     {
       "symbol": "PFE",
       "name": "Pfizer",
       "market": "INT",
       "currency": "USD",
-      "price": 28.86,
-      "change": -0.1,
-      "change_percent": -0.1,
-      "changePercent": -0.1
+      "price": 28.47,
+      "change": -1.35,
+      "change_percent": -1.35,
+      "changePercent": -1.35
     },
     {
       "symbol": "AZN",
       "name": "AstraZeneca",
       "market": "INT",
       "currency": "USD",
-      "price": 184.02,
-      "change": -0.23,
-      "change_percent": -0.23,
-      "changePercent": -0.23
+      "price": 182.27,
+      "change": -0.95,
+      "change_percent": -0.95,
+      "changePercent": -0.95
     }
   ],
   "feeds": [
@@ -109,7 +109,7 @@
       "tag": "FDA & Approvals",
       "title": "FDA Approves Breakthrough Oncology Treatment for Advanced Clinical Trials",
       "link": "https://www.fda.gov",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "The U.S. Food and Drug Administration has granted accelerated approval for a novel therapeutic formulation designed to target refractory tumor pathways with minimal systemic toxicity."
     },
     {
@@ -117,7 +117,7 @@
       "tag": "FDA & Approvals",
       "title": "New Guidance Issued for Computer Software Assurance in Pharmaceutical Manufacturing",
       "link": "https://www.fda.gov",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Agency emphasizes risk-based approaches for validation of automated systems, supporting compliance and data integrity across production lines."
     },
     {
@@ -125,7 +125,7 @@
       "tag": "M&A & Financials",
       "title": "Global Biopharma Announces $4.2 Billion Strategic Acquisition in Specialty Formulations",
       "link": "https://economictimes.indiatimes.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Consolidation in the drug delivery sector accelerates as major firms expand their pipeline portfolios into complex injectables and targeted microfluidic drug delivery systems."
     },
     {
@@ -133,7 +133,7 @@
       "tag": "Clinical & Drugs",
       "title": "Phase III Clinical Trial Results Show Efficacy in Novel Extended-Release Suspension",
       "link": "https://www.fiercepharma.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Single-dose solvent-free dry powder suspensions demonstrate improved bioavailability and patient compliance profiles in multicenter trials."
     },
     {
@@ -141,7 +141,7 @@
       "tag": "Industry General",
       "title": "Implementation of AI-Driven Quality by Design (QbD) Frameworks in MSMEs",
       "link": "https://www.fiercepharma.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Industry leaders highlight how machine learning screening matrices and design of experiments (DoE) optimize topical cream formulations and reduce batch failure rates."
     }
   ],
@@ -151,7 +151,7 @@
       "tag": "FDA & Approvals",
       "title": "FDA Approves Breakthrough Oncology Treatment for Advanced Clinical Trials",
       "link": "https://www.fda.gov",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "The U.S. Food and Drug Administration has granted accelerated approval for a novel therapeutic formulation designed to target refractory tumor pathways with minimal systemic toxicity."
     },
     {
@@ -159,7 +159,7 @@
       "tag": "FDA & Approvals",
       "title": "New Guidance Issued for Computer Software Assurance in Pharmaceutical Manufacturing",
       "link": "https://www.fda.gov",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Agency emphasizes risk-based approaches for validation of automated systems, supporting compliance and data integrity across production lines."
     },
     {
@@ -167,7 +167,7 @@
       "tag": "M&A & Financials",
       "title": "Global Biopharma Announces $4.2 Billion Strategic Acquisition in Specialty Formulations",
       "link": "https://economictimes.indiatimes.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Consolidation in the drug delivery sector accelerates as major firms expand their pipeline portfolios into complex injectables and targeted microfluidic drug delivery systems."
     },
     {
@@ -175,7 +175,7 @@
       "tag": "Clinical & Drugs",
       "title": "Phase III Clinical Trial Results Show Efficacy in Novel Extended-Release Suspension",
       "link": "https://www.fiercepharma.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Single-dose solvent-free dry powder suspensions demonstrate improved bioavailability and patient compliance profiles in multicenter trials."
     },
     {
@@ -183,7 +183,7 @@
       "tag": "Industry General",
       "title": "Implementation of AI-Driven Quality by Design (QbD) Frameworks in MSMEs",
       "link": "https://www.fiercepharma.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Industry leaders highlight how machine learning screening matrices and design of experiments (DoE) optimize topical cream formulations and reduce batch failure rates."
     }
   ],
@@ -193,7 +193,7 @@
       "tag": "FDA & Approvals",
       "title": "FDA Approves Breakthrough Oncology Treatment for Advanced Clinical Trials",
       "link": "https://www.fda.gov",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "The U.S. Food and Drug Administration has granted accelerated approval for a novel therapeutic formulation designed to target refractory tumor pathways with minimal systemic toxicity."
     },
     {
@@ -201,7 +201,7 @@
       "tag": "FDA & Approvals",
       "title": "New Guidance Issued for Computer Software Assurance in Pharmaceutical Manufacturing",
       "link": "https://www.fda.gov",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Agency emphasizes risk-based approaches for validation of automated systems, supporting compliance and data integrity across production lines."
     },
     {
@@ -209,7 +209,7 @@
       "tag": "M&A & Financials",
       "title": "Global Biopharma Announces $4.2 Billion Strategic Acquisition in Specialty Formulations",
       "link": "https://economictimes.indiatimes.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Consolidation in the drug delivery sector accelerates as major firms expand their pipeline portfolios into complex injectables and targeted microfluidic drug delivery systems."
     },
     {
@@ -217,7 +217,7 @@
       "tag": "Clinical & Drugs",
       "title": "Phase III Clinical Trial Results Show Efficacy in Novel Extended-Release Suspension",
       "link": "https://www.fiercepharma.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Single-dose solvent-free dry powder suspensions demonstrate improved bioavailability and patient compliance profiles in multicenter trials."
     },
     {
@@ -225,7 +225,7 @@
       "tag": "Industry General",
       "title": "Implementation of AI-Driven Quality by Design (QbD) Frameworks in MSMEs",
       "link": "https://www.fiercepharma.com",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "summary": "Industry leaders highlight how machine learning screening matrices and design of experiments (DoE) optimize topical cream formulations and reduce batch failure rates."
     }
   ]
